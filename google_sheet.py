@@ -37,7 +37,7 @@ class Sheet_upload:
         gc = gspread.Client(auth=scoped_credentials)
         gc.session = AuthorizedSession(scoped_credentials)
 
-        spreadsheet_key = '1-JH1sklUIxBxFLZ-jlXEeXyFZ3lFm3_IyzrnYsfGPKI'
+        spreadsheet_key = 'XXXXXXXXXXXXXXXXXXXXXXXXXX'
 
         sh = gc.open_by_key(spreadsheet_key)
         self.sheet1 = sh.get_worksheet(0)
